@@ -22,3 +22,11 @@ exports.storeInfo = function(params, callback) {
   return callback(null, {data: data});
 });
 }
+exports.listInfo = function(params, callback){
+  $fh.db({
+    "act": "list",
+    "type": "myFirstEntity",
+  }, function(err, data) {
+    return callback(err, data);
+  });
+}
