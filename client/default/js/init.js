@@ -40,7 +40,7 @@ $fh.ready(function() {
       },
       function(res) {
         console.log(res);
-        var res = res.list;
+        res = res.list;
         document.getElementById('cloudConfig').innerHTML = '';
         for(var i=0; i<res.length; i++){
           var name = res[i].fields.name;
